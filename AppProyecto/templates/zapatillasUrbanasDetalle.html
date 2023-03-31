@@ -1,0 +1,18 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block contenido %}
+<br>
+<br>
+<div class="container">
+    <p><h4>{{zapatillasurbanas.titulo}}</h4></p>
+    {% if zapatillasurbanas.imagen_del_producto %}
+    <p><img src="{{zapatillasurbanas.imagen_del_producto.url}}" alt=""></p>
+    {% endif %}
+    
+    <p>Marca: {{zapatillasurbanas.marca}}</p>
+    <p>Descripción: {{zapatillasurbanas.descripcion}}</p>
+    <p>Precio(US$): {{zapatillasurbanas.precio}}</p>
+    <p>Teléfono de Contacto: {{zapatillasurbanas.telefono}}</p>
+    <p>Email de Contacto: {{zapatillasurbanas.email}}</p>
+    </div>
+{% endblock %}

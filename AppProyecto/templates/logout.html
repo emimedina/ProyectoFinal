@@ -1,0 +1,16 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block contenido %}
+
+<br>
+<br>
+<div class="container text-center">
+    <h1>Saliste de la sesión</h1>
+</div>
+
+<div class="container text-center">
+    <p>Quieres <a href="{% url 'login' %}">iniciar sesión </a>de nuevo?</p>
+</div>
+<br>
+<br>
+{% endblock %}

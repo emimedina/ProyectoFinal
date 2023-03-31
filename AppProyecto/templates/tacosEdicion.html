@@ -1,0 +1,27 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block contenido %}
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="container">
+
+    <h4>Editar Tacos</h4>
+    
+</div>
+
+<div class="container">
+    <div class="form-group">
+        <form method="post" enctype="multipart/form-data">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Guardar cambios</button>
+        </form>
+    </div>    
+</div>
+<br>
+
+{% endblock %}

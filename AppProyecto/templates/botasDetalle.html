@@ -1,0 +1,19 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block contenido %}
+
+<br>
+<br>
+<div class="container">
+    <p><h4>{{botas.titulo}}</h4></p>
+    {% if botas.imagen_del_producto %}
+    <p><img src="{{botas.imagen_del_producto.url}}" alt=""></p>
+    {% endif %}
+    
+    <p>Marca: {{botas.marca}}</p>
+    <p>Descripción: {{botas.descripcion}}</p>
+    <p>Precio(US$): {{botas.precio}}</p>
+    <p>Teléfono de Contacto: {{botas.telefono}}</p>
+    <p>Email de Contacto: {{botas.email}}</p>
+    </div>
+{% endblock %}

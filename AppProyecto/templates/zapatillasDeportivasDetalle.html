@@ -1,0 +1,23 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block contenido %}
+
+<br>
+<br>
+
+<div class="container">
+
+<p><h4>{{zapatillasdeportivas.titulo}}</h4></p>
+
+{% if zapatillasdeportivas.imagen_del_producto %}
+    <p><img src="{{zapatillasdeportivas.imagen_del_producto.url}}" alt=""></p>
+{% endif %}
+<p>Marca: {{zapatillasdeportivas.marca}}</p>
+<p>Descripción: {{zapatillasdeportivas.descripcion}}</p>
+<p>Precio(US$): {{zapatillasdeportivas.precio}}</p>
+<p>Teléfono de Contacto: {{zapatillasdeportivas.telefono}}</p>
+<p>Email de Contacto: {{zapatillasdeportivas.email}}</p>
+
+
+</div>
+{% endblock %}

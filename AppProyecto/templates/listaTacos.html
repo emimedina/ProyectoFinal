@@ -1,0 +1,27 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block contenido %}
+<br>
+<br>
+
+<div class="container text-center">
+    <h1>Tacos</h1>
+</div>
+<br>
+<div class="container text-center">
+    <div class="row">
+            {% for taco in tacos %}
+            <div class="col-sm-6 align-items-center">
+                <div class="card-body">
+                <img src="{{taco.imagen_del_producto.url}}" class="" width="200px">
+                {{taco.titulo}}
+                <a href="{% url 'tacos detalle' taco.id %}">Ver <i class="bi bi-eye"></i></a>
+                <a href="{% url 'tacos edicion' taco.id %}">Editar<i class="bi bi-pencil-fill"></i></a>
+                <a href="{% url 'tacos eliminar' taco.id %}">Eliminar<i class="bi bi-trash text-danger"></i></a>
+            </div>
+            <br>
+            {% endfor %}
+    </div>
+</div>
+{% endblock %}
+    

@@ -1,0 +1,25 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block contenido %}
+<br>
+<br>
+<div class="container text-center">
+    <h1>Botas</h1>
+</div>
+<br>
+<div class="container text-center">
+    <div class="row">
+            {% for bota in botas %}
+            <div class="col-sm-6 align-items-center">
+                <div class="card-body">
+                <img src="{{bota.imagen_del_producto.url}}" class="" width="200px">
+                {{bota.titulo}}
+                <a href="{% url 'botas detalle' bota.id %}">Ver <i class="bi bi-eye"></i></a>
+                <a href="{% url 'botas edicion' bota.id %}">Editar<i class="bi bi-pencil-fill"></i></a>
+                <a href="{% url 'botas eliminar' bota.id %}">Eliminar<i class="bi bi-trash text-danger"></i></a>
+            </div>
+            <br>
+            {% endfor %}
+    </div>
+</div>
+{% endblock %}
