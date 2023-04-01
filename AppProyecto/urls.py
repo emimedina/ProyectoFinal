@@ -30,9 +30,9 @@ urlpatterns = [
     path('zapatillasUrbanasEliminar/<int:pk>/', views.ZapatillasUrbanasDelete.as_view(), name='zapatillas urbanas eliminar'),
 
     path('listaBotas/', views.BotasLista.as_view(), name='botas'),
-    path('botasDetalle/int:pk/', views.BotasDetalle.as_view(), name='botas detalle'),
-    path('botasEdicion/int:pk/', views.BotasUpdate.as_view(), name='botas edicion'),
-    path('botasEliminar/int:pk/', views.BotasDelete.as_view(), name='botas eliminar'),
+    path('botasDetalle/<int:pk>/', views.BotasDetalle.as_view(), name='botas detalle'),
+    path('botasEdicion/<int:pk>/', views.BotasUpdate.as_view(), name='botas edicion'),
+    path('botasEliminar/<int:pk>/', views.BotasDelete.as_view(), name='botas eliminar'),
 
     path('listaTacos/', views.TacosLista.as_view(), name='tacos'),
     path('tacosDetalle/<int:pk>/', views.TacosDetalle.as_view(), name='tacos detalle'),

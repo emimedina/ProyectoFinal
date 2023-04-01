@@ -7,7 +7,7 @@ class Productos(models.Model):
       ('zapatillas urbanas', 'Zapatillas Urbanas'),
       ('botas', 'Botas'),
       ('tacos', 'Tacos'),
-   
+      #el primer elemento de la tupla es el valor interno del campo, el segundo es la cadena que se mostrara al usuario
     )
     usuario = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True) #almacena la relacion entre el objeto y el usuario que lo crea
     titulo = models.CharField(max_length=200)
