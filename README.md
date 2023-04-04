@@ -8,3 +8,6 @@ Para poder ver, editar, o borrar los productos hay que ir a cada seccion en el m
 
 Los casos de prueba:
 https://docs.google.com/spreadsheets/d/1rWyxQA7hxcFBDgNJsY7S070Z9Wz4_iGA_5cR-QgQtds/edit?usp=sharing
+
+El video explicativo:
+https://clipchamp.com/watch/L3nR6BTIR0r
